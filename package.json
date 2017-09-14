@@ -1,0 +1,23 @@
+{
+  "name": "package.json",
+  "version": "1.0.0",
+  "description": "package.json file for Bamazon project",
+  "main": "bamazonCustomer.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/D-Molloy/bamazon.git"
+  },
+  "author": "Denis Molloy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/D-Molloy/bamazon/issues"
+  },
+  "homepage": "https://github.com/D-Molloy/bamazon#readme",
+  "dependencies": {
+    "inquirer": "^3.2.3",
+    "mysql": "^2.14.1"
+  }
+}
