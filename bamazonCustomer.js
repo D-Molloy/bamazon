@@ -61,7 +61,6 @@ function displayInventory() {
                 type: "input",
                 message:"Please enter the item number you would like to purchase:",
                 validate: function(value){
-                    // if(value <= res.length){
                     if(isNaN(value)==false){   
                         return true;
                     } else {
@@ -125,9 +124,7 @@ function checkInventory(){
                     purchQuant = answer.newQuant;
                     console.log("Order quantity updated.")
                     checkInventory();
-                    //might need to toString the answer in order for it to work
                 });
-
             } else {
                 remainingInv = res[0].stock_quantity - purchQuant;
                 orderTotal = purchQuant * res[0].price;
@@ -165,9 +162,9 @@ function displayOrder(){
     console.log("***********************************************************");
     console.log("*                      Order Complete!                    *");
     console.log("***********************************************************");
-    console.log("Your order of:");
+    console.log("Your order:");
     console.log("___________________________________________________________");
-    console.log(purchQuant + " x " + purchProdName) + " ($" + purchProdPrice +"/each)";
+    console.log(purchQuant + " x " + purchProdName + " ($" + purchProdPrice +"/each)");
     console.log("===========================================================");
     console.log("Order Total: $" + orderTotal.toFixed(2) + "\n");
     console.log("Delivery: Sooner than you think!");
