@@ -1,4 +1,4 @@
-# Weed 12 homework: bamazon
+# Week 12 homework: bamazon
 
 The bamazon homework utilizes javaScript, node.js, npm packages (mysql & inquirer), and a MySQL database to create a CLI storefront for both customers and managers:
 
