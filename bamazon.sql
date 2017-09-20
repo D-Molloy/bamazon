@@ -2,11 +2,7 @@ drop database if exists bamazon;
 
 create database bamazon;
 
-products use bamazon;
-
-
-select * from products;
-
+use bamazon;
 
 create table products (
 	item_id integer(11) auto_increment primary key,
@@ -30,3 +26,4 @@ values
     ("Cascadia T-Shirt", "Clothing", 19.99, 50);
     
 
+select * from products;
