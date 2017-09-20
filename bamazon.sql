@@ -1,10 +1,10 @@
--- drop database if exists bamazon;
+drop database if exists bamazon;
 
--- create database bamazon;
+create database bamazon;
 
 products use bamazon;
 
-update products set stock_quantity = 100 where item_id=1;
+
 select * from products;
 
 
